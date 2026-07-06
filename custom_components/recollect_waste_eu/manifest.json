@@ -9,3 +9,4 @@
   "loggers": ["aiorecollect"],
   "requirements": ["git+https://github.com/mechkey/aiorecollect.git@dev"],
   "version": "1.0.0"
+}
