@@ -2,7 +2,7 @@
 
 import logging
 
-DOMAIN = "recollect_waste"
+DOMAIN = "recollect_waste_eu"
 
 LOGGER = logging.getLogger(__package__)
 
