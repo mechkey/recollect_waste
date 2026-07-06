@@ -1,6 +1,6 @@
 {
   "domain": "recollect_waste_eu",
-  "name": "ReCollect Waste",
+  "name": "ReCollect Waste EU",
   "codeowners": ["@bachya"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/recollect_waste",
