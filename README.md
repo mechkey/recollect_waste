@@ -15,7 +15,7 @@ This integration was built almost entirely through back-and-forth with an AI ass
 - Treat it as a personal/hobbyist project, not a production-grade or officially reviewed integration.
 - Read the code before trusting it with anything you care about — it's not long, and it's not trying to hide anything.
 - Expect rough edges. Pickup type icons/display names are hardcoded to a short list (`GeneralWaste`, `Garden`, `RecyclingwithFlex`) matching one specific ReCollect service area; if your bin types have different names, you'll want to extend `const.py` yourself.
-- The `aiorecollect` dependency is pinned to a `dev` branch of a fork (`git+https://github.com/mechkey/aiorecollect.git@dev`), not a stable release — it can change underneath you without warning. I won't change it though unless it breaks.
+- The `aiorecollect` dependency is pinned to a `dev` branch of a fork (`git+https://github.com/mechkey/aiorecollect.git@dev`), not a stable release — it can change underneath you without warning.
 - PRs, issues, and "hey this is wrong" corrections are genuinely welcome. This project would benefit from actual scrutiny.
 
 ## What it does
@@ -36,5 +36,5 @@ This integration was built almost entirely through back-and-forth with an AI ass
 
 - Original integration: [bachya/recollect_waste](https://github.com/bachya) (Home Assistant core).
 - Per-type sensor pattern inspired by: [mampfes/hacs_waste_collection_schedule](https://github.com/mampfes/hacs_waste_collection_schedule).
-- `aiorecollect` client: [mechkey/aiorecollect](https://github.com/mechkey/aiorecollect) (dev branch fork). Original [bachya/aiorecollect](https://github.com/bachya)
+- `aiorecollect` client: [mechkey/aiorecollect](https://github.com/mechkey/aiorecollect) (dev branch fork).
 - Glue code, renaming, and the dynamic per-type sensor logic: assembled with AI assistance, as described above.
