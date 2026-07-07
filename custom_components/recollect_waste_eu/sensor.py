@@ -166,7 +166,10 @@ class ReCollectWasteNextPickupSummarySensor(ReCollectWasteEntity, SensorEntity):
             pickup_types = async_get_pickup_type_names(
                 self._entry, event.pickup_types
             )
-            type_string = ", ".join(pickup_types)
+            display_types = [
+                PICKUP_TYPE_DISPLAY_NAMES.get(t, t) for t in pickup_types
+            ]
+            type_string = ", ".join(display_types)
             days = (event.date - today).days
 
             if days == 1:
