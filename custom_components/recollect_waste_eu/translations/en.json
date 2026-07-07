@@ -25,6 +25,7 @@
       },
       "upcoming_pickups": {
         "name": "Upcoming pickups" 
+      }
     }
   },
   "options": {
