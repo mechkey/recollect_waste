@@ -22,7 +22,9 @@
       },
       "next_pickup": {
         "name": "Next pickup"
-      }
+      },
+      "upcoming_pickups": {
+        "name": "Upcoming pickups" 
     }
   },
   "options": {
