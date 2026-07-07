@@ -20,7 +20,7 @@ PICKUP_TYPE_ICONS = {
 DEFAULT_PICKUP_ICON = "mdi:trash-can-outline"
 
 PICKUP_TYPE_DISPLAY_NAMES = {
-    "GeneralWaste": "General Waste",
-    "Garden": "Garden Waste",
+    "GeneralWaste": "General",
+    "Garden": "Garden",
     "RecyclingwithFlex": "Recycling",
 }
