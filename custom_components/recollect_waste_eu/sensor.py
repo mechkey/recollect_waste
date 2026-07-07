@@ -157,7 +157,7 @@ class ReCollectWasteNextPickupSummarySensor(ReCollectWasteEntity, SensorEntity):
         today = dt_util.now().date()
 
         try:
-            event = next(e for e in self.coordinator.data if e.date >= today)
+            event = next(e for e in self.coordinator.data if e.date > today)
         except StopIteration:
             LOGGER.debug("No upcoming pickup found for summary sensor")
             self._attr_extra_state_attributes = {}
@@ -169,9 +169,7 @@ class ReCollectWasteNextPickupSummarySensor(ReCollectWasteEntity, SensorEntity):
             type_string = ", ".join(pickup_types)
             days = (event.date - today).days
 
-            if days == 0:
-                self._attr_native_value = f"{type_string} today"
-            elif days == 1:
+            if days == 1:
                 self._attr_native_value = f"{type_string} tomorrow"
             else:
                 self._attr_native_value = f"{type_string} in {days} days"
